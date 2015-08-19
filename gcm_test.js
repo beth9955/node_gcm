@@ -15,11 +15,11 @@ var message = new gcm.Message({
     }
 });
 
-var server_api_key = 'AIzaSyCN3BoEudEVn2LD7sKOOP6odr-MvTfb4go';
+var server_api_key = 'server_api_key';
 var sender = new gcm.Sender(server_api_key);
 var registrationIds = [];
 
-var token = 'f5q2tiD8Aik:APA91bE5XVVUk2FaG4_XNTIVxX2yzZ8qJLiZdsosVH9nnxibd3LO9KaLJhr30JjEv1eoKQnL4d5_ZIJXo1XuDX4ADxD3hDLyCKj8hUtmA2KzohTx_1q6YM1MW7aQO0QSW_f3MIJ88v24';
+var token = 'registrationIds';
 registrationIds.push(token);
 
 sender.send(message, registrationIds, 4, function (err, result) {
